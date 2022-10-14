@@ -64,22 +64,6 @@ CREATE TABLE events(
   product_id VARCHAR(256) REFERENCES products(product_id)
 );
 
-CREATE TABLE superheroes(
-  id INTEGER PRIMARY KEY,
-  name VARCHAR(1024),
-  gender VARCHAR(128),
-  eye_color VARCHAR(128),
-  race VARCHAR(1024),
-  hair_color VARCHAR(128),
-  height REAL,
-  publisher VARCHAR(1024),
-  skin_color VARCHAR(1024),
-  alignment VARCHAR(128),
-  weight REAL,
-  created_at TIMESTAMP,
-  updated_at TIMESTAMP
-);
-
 COPY addresses FROM '/data/addresses.csv' DELIMITER ',' CSV HEADER;
 COPY users FROM '/data/users.csv' DELIMITER ',' CSV HEADER;
 COPY promos FROM '/data/promos.csv' DELIMITER ',' CSV HEADER;
@@ -87,4 +71,3 @@ COPY products FROM '/data/products.csv' DELIMITER ',' CSV HEADER;
 COPY orders FROM '/data/orders.csv' DELIMITER ',' CSV HEADER;
 COPY order_items FROM '/data/order_items.csv' DELIMITER ',' CSV HEADER;
 COPY events FROM '/data/events.csv' DELIMITER ',' CSV HEADER;
-COPY superheroes FROM '/data/superheroes.csv' DELIMITER ',' CSV HEADER;
