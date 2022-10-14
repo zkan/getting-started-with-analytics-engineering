@@ -11,13 +11,13 @@ make up
 To initialize a dbt project:
 
 ```sh
-export DBT_ENV_SECRET_PG_PASSWORD=postgres
 dbt init
 ```
 
 To debug the dbt project:
 
 ```sh
+export DBT_ENV_SECRET_PG_PASSWORD=postgres
 cd <dbt_project_name>
 dbt debug
 ```
