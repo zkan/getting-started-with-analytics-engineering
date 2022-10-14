@@ -1,0 +1,3 @@
+tasks:
+  - command: |
+      ./gitpod-command.sh
