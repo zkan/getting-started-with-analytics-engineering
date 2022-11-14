@@ -23,31 +23,31 @@ dbt init
 1. Create `profiles.yml` under your dbt project.
 1. Add the content below to the file and save.
 
-     ```yaml
-     greenery:
-        outputs:
+    ```yaml
+    greenery:
 
-            dev:
-            type: postgres
-            threads: 1
-            host: localhost
-            port: 5432
-            user: postgres
-            pass: "{{ env_var('DBT_ENV_SECRET_PG_PASSWORD') }}"
-            dbname: greenery
-            schema: public
+      outputs:
+        dev:
+          type: postgres
+          threads: 1
+          host: localhost
+          port: 5432
+          user: postgres
+          pass: "{{ env_var('DBT_ENV_SECRET_PG_PASSWORD') }}"
+          dbname: greenery
+          schema: public
 
-            prod:
-            type: postgres
-            threads: 1
-            host: localhost
-            port: 5432
-            user: postgres
-            pass: "{{ env_var('DBT_ENV_SECRET_PG_PASSWORD') }}"
-            dbname: greenery
-            schema: prod
+        prod:
+          type: postgres
+          threads: 1
+          host: localhost
+          port: 5432
+          user: postgres
+          pass: "{{ env_var('DBT_ENV_SECRET_PG_PASSWORD') }}"
+          dbname: greenery
+          schema: prod
 
-        target: dev
+      target: dev
     ```
 
 1. Set the environment variable:
