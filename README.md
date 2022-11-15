@@ -21,13 +21,14 @@ dbt init
 ### To set up your dbt profile:
 
 1. Create `profiles.yml` under your dbt project.
-1. Add the content below to the file and save.
+1. Add the content below to the file, change the output and target to your name
+   (e.g., `dbt_john`), and save.
 
     ```yaml
     greenery:
 
       outputs:
-        dev:
+        dbt_zkan:
           type: postgres
           threads: 1
           host: localhost
@@ -35,7 +36,7 @@ dbt init
           user: postgres
           pass: "{{ env_var('DBT_ENV_SECRET_PG_PASSWORD') }}"
           dbname: greenery
-          schema: public
+          schema: dbt_zkan
 
         prod:
           type: postgres
@@ -47,7 +48,7 @@ dbt init
           dbname: greenery
           schema: prod
 
-      target: dev
+      target: dbt_zkan
     ```
 
 1. Set the environment variable:
