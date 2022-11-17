@@ -28,7 +28,13 @@ dbt init
 
 ### To set up your dbt profile
 
-1. Create `profiles.yml` under your dbt project.
+1. Change the directory to your dbt project.
+
+    ```bash
+    cd <dbt_project_name>
+    ```
+
+1. Create the `profiles.yml` file.
 1. Add the content below to the file, change the output and target to your name
    (e.g., `dbt_john`), and save.
 
