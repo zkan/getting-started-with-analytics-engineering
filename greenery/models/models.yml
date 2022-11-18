@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: average_orders_per_hour
+  - name: number_of_users
+    description: Number of users in Greenery
+    columns:
+      - name: number_of_users
+        description: จำนวนผู้ใช้งานในระบบ Greenery
+        tests:
+          - not_null
+  - name: number_of_users_with_one_two_or_three_plus_purchases
