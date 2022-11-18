@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: greenery
+    schema: public
+    tables:
+      - name: addresses
+      - name: events
+      - name: order_items
+      - name: orders
+      - name: products
+      - name: promos
+      - name: users
