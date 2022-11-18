@@ -1,8 +1,14 @@
 with
 
-source as (
+users as (
 
-    select * from {{ source('greenery', 'users') }}
+    select * from {{ ref('base_users') }}
+
+)
+
+, addresses as (
+
+    select * from {{ ref('base_addresses') }}
 
 )
 
@@ -17,9 +23,15 @@ source as (
         -- , phone_number
         , created_at
         , updated_at
-        , address_id
+        , address
+        , zipcode
+        , state
+        , country
 
-    from source
+    from users as u
+    left join addresses as a
+    on
+        u.address_id = a.address_id
 
 )
 
