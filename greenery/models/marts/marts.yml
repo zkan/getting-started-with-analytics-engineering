@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: average_orders_per_hour
+  - name: model2
   - name: number_of_users
     description: Number of users in Greenery
     columns:

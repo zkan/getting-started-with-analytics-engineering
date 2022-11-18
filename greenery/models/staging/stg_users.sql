@@ -1,10 +1,14 @@
 with
 
 source as (
+
     select * from {{ source('greenery', 'users') }}
+
 )
 
+-- Remove the columns that contain PII
 , final as (
+
     select
         user_id
         -- , first_name
@@ -16,6 +20,7 @@ source as (
         , address_id
 
     from source
+
 )
 
 select * from final

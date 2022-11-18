@@ -1,10 +1,13 @@
 with
 
 source as (
+
     select * from {{ source('greenery', 'orders') }}
+
 )
 
 , final as (
+
     select
         order_id
         , user_id
@@ -21,6 +24,7 @@ source as (
         , status
 
     from source
+
 )
 
 select * from final
