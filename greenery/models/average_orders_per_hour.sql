@@ -6,7 +6,7 @@ order_counts_in_each_hour as (
         date_trunc('hour', created_at)
         , count(order_id) as order_count
 
-    from orders
+    from {{ ref('stg_orders') }}
     group by date_trunc('hour', created_at)
 
 )

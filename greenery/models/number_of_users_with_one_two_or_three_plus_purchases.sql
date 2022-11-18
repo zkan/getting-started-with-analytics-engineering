@@ -10,7 +10,7 @@ users_with_order_count as (
             when count(order_id) >= 3 then 'three_plus_purchases'
         end as order_count
 
-    from orders
+    from {{ ref('stg_orders') }}
     group by 1
 
 )
