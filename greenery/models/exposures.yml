@@ -1,0 +1,13 @@
+version: 2
+
+exposures:
+  - name: My Awesome Dashboard
+    type: dashboard
+
+    depends_on:
+      - ref('model2')
+      - ref('number_of_users')
+
+    owner:
+      name: Kan Ouivirach
+      email: kan@odds.team
