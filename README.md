@@ -34,9 +34,15 @@ dbt init
     cd <dbt_project_name>
     ```
 
-1. Create the `profiles.yml` file.
-1. Add the content below to the file, change the output and target to your name
-   (e.g., `dbt_john`), and save.
+1. Run the following command to copy the profiles example file to the real
+   profiles file.
+
+    ```bash
+    cp profiles.yml.example profiles.yml
+    ```
+
+1. Edit the content int the profiles file by changing the output and target to
+   your name (e.g., `dbt_john`), and save. See the example below.
 
     ```yaml
     greenery:
