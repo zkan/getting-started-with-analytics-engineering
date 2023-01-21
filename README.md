@@ -33,10 +33,10 @@ dbt init
     ```
 
 1. Run the following command to copy the profiles example file to the real
-   profiles file.
+   profiles file in the project folder.
 
     ```bash
-    cp profiles.yml.example profiles.yml
+    cp ../profiles.yml.example profiles.yml
     ```
 
 1. Edit the content in the `profiles.yml` file by changing the output and
@@ -74,6 +74,8 @@ dbt init
     ```bash
     export DBT_ENV_SECRET_PG_PASSWORD=postgres
     ```
+
+1. We then should be able to use dbt now. :-)
 
 ### To debug the dbt project
 
