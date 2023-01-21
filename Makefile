@@ -9,4 +9,6 @@ down:
 remove_volume:
 	docker volume rm $(VOLUME_NAME)
 
+clean: down remove_volume
+
 reset: down remove_volume up
