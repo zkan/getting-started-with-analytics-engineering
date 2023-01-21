@@ -39,8 +39,8 @@ dbt init
     cp profiles.yml.example profiles.yml
     ```
 
-1. Edit the content int the profiles file by changing the output and target to
-   your name (e.g., `dbt_john`), and save. See the example below.
+1. Edit the content in the `profiles.yml` file by changing the output and
+   target to your name (e.g., `dbt_john`), and save. See the example below.
 
     ```yaml
     greenery:
