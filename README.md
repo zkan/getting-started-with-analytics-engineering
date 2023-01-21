@@ -100,3 +100,12 @@ export DBT_ENV_SECRET_PG_PASSWORD=postgres
 cd <dbt_project_name>
 dbt test
 ```
+
+### To generate the dbt documentation and serve it
+
+```bash
+export DBT_ENV_SECRET_PG_PASSWORD=postgres
+cd <dbt_project_name>
+dbt docs generate
+dbt docs serve
+```
