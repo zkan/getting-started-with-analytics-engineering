@@ -1,3 +1,4 @@
 {
-  "postStartCommand": ["make", "up"]
+  "postStartCommand": ["make", "up"],
+  "postAttachCommand": ["make", "up"]
 }
