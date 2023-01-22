@@ -9,11 +9,11 @@
 | `setup` | A folder that contains data and scripts used for initializing the Postgres database used in this project |
 | `yaml_files` | A folder that contains the YAML file examples such as `profiles.yml` or `src.yml` |
 | `.gitignore` | A file that specifies intentionally untracked files that Git should ignore |
-| `docker-compose.yml` | A Docker Compose file that runs a Postgres database and SQLPad used in this project |
-| `greenery-dbdiagram.txt` | A file that provides code for drawing an ER diagram on [dbdiagram.io](https://dbdiagram.io/home) |
 | `LICENSE` | A license file |
 | `Makefile` | A Makefile file which defines set of tasks to be executed |
 | `README.md` | README file that provides the setup instruction on this project |
+| `docker-compose.yml` | A Docker Compose file that runs a Postgres database and SQLPad used in this project |
+| `greenery-dbdiagram.txt` | A file that provides code for drawing an ER diagram on [dbdiagram.io](https://dbdiagram.io/home) |
 | `requirements.txt` | A file that contains Python package dependencies for this code repository |
 
 ## Getting Started
