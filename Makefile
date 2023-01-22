@@ -1,7 +1,7 @@
 VOLUME_NAME = $(shell docker volume ls | grep getting-started-with-analytics-engineering | awk '{print $$2}')
 
 up:
-	docker-compose up -d --always-recreate-deps
+	docker-compose up -d --build
 
 down:
 	docker-compose down
