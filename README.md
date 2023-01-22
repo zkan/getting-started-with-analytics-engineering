@@ -1,5 +1,21 @@
 # Getting Started with Analytics Engineering
 
+## Files/Folders and What They Do
+
+| Name | Description |
+| - | - |
+| `.devcontainer/devcontainer.json` | A file that tells VS Code how to access (or create) a development container with a well-defined tool and runtime stack |
+| `csv_files` | A folder that contains CSV files used for testing `dbt seed` |
+| `setup` | A folder that contains data and scripts used for initializing the Postgres database used in this project |
+| `yaml_files` | A folder that contains the YAML file examples such as `profiles.yml` or `src.yml` |
+| `.gitignore` | A file that specifies intentionally untracked files that Git should ignore |
+| `docker-compose.yml` | A Docker Compose file that runs a Postgres database and SQLPad used in this project |
+| `greenery-dbdiagram.txt` | A file that runs a Postgres database used in this project |
+| `LICENSE` | A license file |
+| `Makefile` | A Makefile file which defines set of tasks to be executed |
+| `README.md` | README file that provides the setup instruction on this project |
+| `requirements.txt` | A file that contains Python package dependencies for this code repository |
+
 ## Getting Started
 
 To start the Docker compose:
