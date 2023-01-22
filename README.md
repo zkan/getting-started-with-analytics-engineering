@@ -8,7 +8,7 @@ To start the Docker compose:
 make up
 ```
 
-### To set up and activate Python virtual environment
+### To Set Up and Activate Your Python Virtual Environment
 
 ```bash
 python -m venv ENV
@@ -16,7 +16,7 @@ source ENV/bin/activate
 pip install -r requirements.txt
 ```
 
-### To initialize a dbt project
+### To Initialize A dbt Project
 
 ```bash
 dbt init
@@ -24,7 +24,7 @@ dbt init
 
 **Note:** Let's specify the project name `greenery`.
 
-### To set up your dbt profile
+### To Set Up Your dbt Profile
 
 1. Change the directory to your dbt project.
 
@@ -77,7 +77,7 @@ dbt init
 
 1. We then should be able to use dbt now. :-)
 
-### To debug the dbt project
+### To Debug The dbt Project
 
 ```bash
 export DBT_ENV_SECRET_PG_PASSWORD=postgres
@@ -85,7 +85,7 @@ cd <dbt_project_name>
 dbt debug
 ```
 
-### To create your data models
+### To Create Your Data Models
 
 ```bash
 export DBT_ENV_SECRET_PG_PASSWORD=postgres
@@ -93,7 +93,7 @@ cd <dbt_project_name>
 dbt run
 ```
 
-### To test your data models
+### To Test Your Data Models
 
 ```bash
 export DBT_ENV_SECRET_PG_PASSWORD=postgres
@@ -101,7 +101,7 @@ cd <dbt_project_name>
 dbt test
 ```
 
-### To generate the dbt documentation and serve it
+### To Generate The dbt Documentation and Serve It
 
 ```bash
 export DBT_ENV_SECRET_PG_PASSWORD=postgres
