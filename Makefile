@@ -11,4 +11,6 @@ remove_volume:
 
 clean: down remove_volume
 
+restart: down up
+
 reset: down remove_volume up
