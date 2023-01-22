@@ -36,7 +36,7 @@ dbt init
    profiles file in the project folder.
 
     ```bash
-    cp ../profiles.yml.example profiles.yml
+    cp ../yaml_files/profiles.yml .
     ```
 
 1. Edit the content in the `profiles.yml` file by changing the output and
