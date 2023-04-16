@@ -20,4 +20,13 @@ greenery:
       dbname: greenery
       schema: prod
 
+    prod_bigquery:
+      type: bigquery
+      method: service-account
+      project: dataengineercafe
+      dataset: greenery
+      threads: 1
+      keyfile: /Users/zkan/.dbt/your-gcp-credential-file.json
+      location: asia-southeast1
+
   target: dbt_zkan
