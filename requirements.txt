@@ -8,10 +8,10 @@ cffi==1.15.1
 charset-normalizer==2.1.1
 click==8.1.3
 colorama==0.4.5
-dbt-bigquery==1.4.3
-dbt-core==1.4.5
+dbt-bigquery==1.5.1
+dbt-core==1.5.1
 dbt-extractor==0.4.1
-dbt-postgres==1.4.5
+dbt-postgres==1.5.1
 future==0.18.2
 google-api-core==2.11.0
 google-auth==2.17.3
@@ -37,7 +37,7 @@ jsonschema==3.2.0
 leather==0.3.4
 Logbook==1.5.3
 MarkupSafe==2.1.1
-mashumaro==3.3.1
+mashumaro==3.6
 minimal-snowplow-tracker==0.0.2
 msgpack==1.0.4
 multidict==6.0.4
