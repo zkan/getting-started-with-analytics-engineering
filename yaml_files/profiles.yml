@@ -26,7 +26,7 @@ greenery:
       project: dataengineercafe
       dataset: greenery
       threads: 1
-      keyfile: /Users/zkan/.dbt/your-gcp-credential-file.json
+      keyfile: "{{ env_var('DBT_ENV_SECRET_GCP_KEYFILE_PATH') }}"
       location: asia-southeast1
 
   target: dbt_zkan
