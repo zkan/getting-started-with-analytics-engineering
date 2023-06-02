@@ -1,7 +1,6 @@
 version: 2
 
 exposures:
-
   - name: weekly_jaffle_metrics
     type: dashboard
     maturity: high
