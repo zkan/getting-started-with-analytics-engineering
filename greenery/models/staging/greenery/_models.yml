@@ -1,14 +1,12 @@
 version: 2
 
 models:
-  - name: my_users
+  - name: stg_greenery__users
     description: Greenery users
     columns:
-      - name: user_id
+      - name: user_guid
         description: User ID
         tests:
           - unique
           - not_null
-      - name: email
-        tests:
-          - unique
+
