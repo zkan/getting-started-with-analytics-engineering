@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: my_users
+    description: Greenery users
+    columns:
+      - name: user_id
+        description: User ID
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - unique
