@@ -1,3 +1,7 @@
 {
-  "postAttachCommand": ["make", "restart"]
+  "postAttachCommand": {
+    "restart": ["make", "restart"],
+    "poetry": ["make", "poetry"]
+  }
 }
+
