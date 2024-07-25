@@ -16,3 +16,6 @@ restart: down up
 reset: down remove_volume up
 
 restart: down up
+
+requirements:
+	poetry export --without-hashes --format=requirements.txt > requirements.txt
