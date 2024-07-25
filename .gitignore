@@ -8,3 +8,4 @@ ENV/
 test.env
 __pycache__
 .user.yml
+*.swp
