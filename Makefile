@@ -17,5 +17,8 @@ reset: down remove_volume up
 
 restart: down up
 
+poetry:
+	curl -sSL https://install.python-poetry.org | python3 -
+
 requirements:
 	poetry export --without-hashes --format=requirements.txt > requirements.txt
