@@ -14,6 +14,7 @@
 | `README.md` | README file that provides the setup instruction on this project |
 | `docker-compose.yml` | A Docker Compose file that runs a Postgres database and SQLPad used in this project |
 | `greenery-dbdiagram.txt` | A file that provides code for drawing an ER diagram on [dbdiagram.io](https://dbdiagram.io/home) |
+| `pyproject.toml` | A file that stores general information such as Python package dependencies for environment setup with Poetry |
 | `requirements.txt` | A file that contains Python package dependencies for this code repository |
 
 ## Getting Started
